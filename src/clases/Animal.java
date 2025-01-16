@@ -2,7 +2,7 @@ package clases;
 
 import java.util.Objects;
 
-public class Animal {
+public abstract class Animal {
 	private static int ContAnimal;
 	private int idAnimal;
 	private String NombreAnimal;
@@ -14,7 +14,7 @@ public class Animal {
 		super();
 		ContAnimal++;
 		this.idAnimal = idAnimal;
-		NombreAnimal = NombreAnimal;
+		this.NombreAnimal = NombreAnimal;
 		this.chip = chip;
 	}
 	public Animal(int idAnimal) {
@@ -23,7 +23,12 @@ public class Animal {
 		NombreAnimal = "********+";
 		this.chip = false;
 	}
-	
+	public Animal() {
+		super();
+		this.idAnimal = 0;
+		NombreAnimal = "";
+		this.chip = false;
+	}
 	
 	/////////GETTER Y SETTERS//////////////////
 
@@ -77,5 +82,6 @@ public class Animal {
 		return Objects.equals(NombreAnimal, other.NombreAnimal) && chip == other.chip && idAnimal == other.idAnimal;
 	}
 	
-	
+/////////OTROS METODOS///////////////////
+	public abstract void saludar();
 }
