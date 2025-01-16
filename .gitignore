@@ -1,7 +1,7 @@
 ## JAVA ##
 # clases compiladas
 *.class
-
+*Test*
 
 #Carpeta de binarios
 bin/
