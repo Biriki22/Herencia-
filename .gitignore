@@ -1,0 +1,25 @@
+## JAVA ##
+# clases compiladas
+*.class
+
+
+#Carpeta de binarios
+bin/
+
+# Archivos de logs
+*.log
+
+# Carpetas con documentación
+DOC*
+
+# Archivo chorra
+Documentoyt.txt
+
+# Paquetes
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
